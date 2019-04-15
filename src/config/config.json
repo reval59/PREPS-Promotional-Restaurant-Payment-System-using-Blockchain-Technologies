@@ -1,0 +1,12 @@
+{
+    "rpcServer":{
+        "default": "ws://127.0.0.1:8545"
+    },
+    "clientServer":{
+
+    },
+    "deployerAccount": "0xb2C6709463c084b00Db413488f5D6677C39d27BE",
+    "GAS_LIMIT": 100000000,
+    "GAS_PRICE": 100000000,
+    "testMode":true
+}

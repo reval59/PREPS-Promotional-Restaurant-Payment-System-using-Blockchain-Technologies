@@ -1,25 +1,76 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <v-app>
+        <v-snackbar
+                v-model="snackbar"
+                :timeout="2500"
+                top
+                vertical
+        >
+            {{ errMsg }}
+            <v-btn
+                    color="pink"
+                    flat
+                    @click="snackbar = false"
+            >
+                Close
+            </v-btn>
+        </v-snackbar>
+        <transition>
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+        </transition>
+    </v-app>
 </template>
-<style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
 
-#nav
-  padding 30px
-  a
-    font-weight bold
-    color #2c3e50
-    &.router-link-exact-active
-      color #42b983
-</style>
+<script>
+    export default {
+        data: () => {
+            return {
+                snackbar: false,
+                errMsg: ''
+            }
+        },
+        beforeMount() {
+            this.$middleware.init()
+        },
+
+        watch: {
+            snackbar: function (val) {
+                if (val == false) {
+                    this.$store.dispatch('error', {error: null})
+                }
+            },
+
+            getters: {
+                account: (state) => {
+                    return state.user.account
+                }
+            },
+            '$route':'showCurrentRoute'
+
+        },
+        async mounted() {
+            this.$store.watch(this.$store.getters.getError, (value) => {
+                if (value != null) {
+                    if(value.startsWith("Node error")){
+                        console.log(value)
+                        this.errMsg = "[EVM Error] Unauthorized action due to invalid parameters or contract state "
+                    } else {
+                        this.errMsg = value
+                    }
+                    this.snackbar = true
+                }
+
+            })
+            let testAccounts = await this.$middleware.getAccounts()
+            this.$store.dispatch('setTestAccounts', testAccounts)
+
+        },
+        methods:{
+            showCurrentRoute(){
+                console.log(this.$route.path)
+            }
+        }
+    }
+</script>

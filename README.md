@@ -1,4 +1,4 @@
-# gui
+# PREPS
 
 ## Project setup
 ```
@@ -7,7 +7,13 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run cordova-serve-android # Development Android 
+npm run cordova-build-android # Build Android 
+npm run cordova-serve-ios # Development IOS 
+npm run cordova-build-ios # Build IOS 
+npm run cordova-serve-browser # Development Browser 
+npm run cordova-build-browser # Build Browser 
+npm run cordova-prepare # prepare for build 
 ```
 
 ### Compiles and minifies for production
