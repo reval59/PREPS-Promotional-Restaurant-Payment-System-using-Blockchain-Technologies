@@ -9,6 +9,10 @@ From an idea of membership subscriptions provided by credit card issuers, which 
 
 Such joint discount offers would be economically appealing to customers, particulary, some of whom are on a tight budget, having no choice but to regularly dine out for reasons of the time constraint and therefore suffering from the acculumlation of dining fees, which would eventually become a win-win solution for both parties.
 
+## Main Technology Stack
+* Frontend: Vue.js (including Vuetify.js, Vuex.js), axios.js, web3.js
+* Backend: Solidity (an object-oriented programming language for writing smart contracts)
+
 ## Prerequisite
 * Installation of Ganache (download link: https://www.trufflesuite.com/ganache)
 * Installation of Xcode (for mobile version only)
