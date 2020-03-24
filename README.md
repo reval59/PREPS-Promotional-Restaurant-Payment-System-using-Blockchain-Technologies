@@ -7,7 +7,12 @@ Not only that, a daily fluctuation in the number of visits for different timeslo
 
 From an idea of membership subscriptions provided by credit card issuers, which enable card holders to enjoy a discount in multiple restaurants in partnership at a cost of paying monthly fees, in this paper, we propose a new payment system based on blockchain technologies which not only simplifies the traditional ordering procedures, to a great extent, along with the real-time order tracking and cancellation but also provides a consensus-driven platform for restaurant owners to design cooperative and location-based discount promotion schemes on their own without the need of external payment agents.
 
-Such joint discount offers would be economically appealing to customers, particulary, some of whom are on a tight budget, having no choice but to regularly dine out for reasons of the time constraint and therefore suffering from the acculumlation of dining fees, which would eventually become a win- win solution for both parties.
+Such joint discount offers would be economically appealing to customers, particulary, some of whom are on a tight budget, having no choice but to regularly dine out for reasons of the time constraint and therefore suffering from the acculumlation of dining fees, which would eventually become a win-win solution for both parties.
+
+## Prerequisite
+* Installation of Ganache (download link: https://www.trufflesuite.com/ganache)
+* Installation of Xcode (for mobile version only)
+
 ## Project setup
 ```
 npm install
