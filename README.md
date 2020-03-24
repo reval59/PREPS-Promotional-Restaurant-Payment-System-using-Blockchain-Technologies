@@ -9,6 +9,8 @@ From an idea of membership subscriptions provided by credit card issuers, which 
 
 Such joint discount offers would be economically appealing to customers, particulary, some of whom are on a tight budget, having no choice but to regularly dine out for reasons of the time constraint and therefore suffering from the acculumlation of dining fees, which would eventually become a win-win solution for both parties.
 
+![image](https://cloud.githubusercontent.com/assets/9053854/24495974/fbf2e0cc-1547-11e7-846c-25b5fac7f6b1.png)
+
 ## Main Technology Stacks
 * Frontend: Vue.js (including Vuetify.js, Vuex.js), axios.js, web3.js
 * Backend: Solidity (an object-oriented programming language for writing smart contracts)
