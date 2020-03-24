@@ -1,5 +1,5 @@
 # PREPS
-
+Promotional Restaruant Payment System using Blockchain Technologies
 ## Introduction
 In recent decades, an increasing number of people dining out has caused the restaurant industry in Hong Kong to rapidly grown up, which has brought about a fierce competition between restaurant owners promoting their restaurants by introducing a new menu, offering discounts for meal deals or some coupons in order to attract customers and encourage their future visits, which, however, does not seem effective enough to convert such a floating population into the actual payments.
 
