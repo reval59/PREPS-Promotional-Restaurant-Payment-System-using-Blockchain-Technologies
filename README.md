@@ -31,7 +31,7 @@ Such joint discount offers would be economically appealing to customers, particu
 ![image](https://github.com/reval59/PREPS-Promotional-Restaurant-Payment-System-using-Blockchain-Technologies/blob/master/screenshots/order.png)
 
 ## Main Technology Stacks
-* Frontend: Vue.js (including Vuetify.js, Vuex.js), axios.js, web3.js
+* Frontend: Aparche Cordova, Vue.js (including Vuetify.js, Vuex.js), axios.js, web3.js
 * Backend: Solidity (an object-oriented programming language for writing smart contracts)
 
 ## Prerequisite
